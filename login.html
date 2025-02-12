@@ -1,0 +1,152 @@
+<html>
+  <head>
+       <title>Sign Up | Log In</title>
+    </head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background:#ffa1bf;
+}
+
+.wrapper {
+  max-width: 400px;
+  background:#c4305f;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.slide-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.slide {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.form-inner form {
+  width: 100%;
+}
+
+.field {
+  margin-top: 15px;
+}
+
+.field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn {
+  margin-top: 15px;
+}
+
+.btn input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #12e8f0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn input:hover {
+  background: #0cb2c7;
+}
+
+.pass-link,
+.signup-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.pass-link a,
+.signup-link a {
+  color: #0e45dd;
+  text-decoration: none;
+}
+
+.pass-link a:hover,
+.signup-link a:hover {
+  text-decoration: underline;
+}
+</style>
+  <body>
+    <div class="wrapper">
+       <div class="title-text">
+          <div class="title login">
+             Account 
+          </div>
+       </div>
+       <div class="form-container">
+          <div class="slide-controls">
+             <input type="radio" name="slide" id="login" checked>
+             <label for="login" class="slide login">Login</label>
+             <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+             <form action="#" class="login">
+                <div class="field">
+                   <input type="text" placeholder="Email Address" required>
+                </div>
+                <div class="field">
+                   <input type="password" placeholder="Password" required>
+                </div>
+                <div class="pass-link">
+                   <a href="#">Reset password?</a>
+                </div>
+                <div class="field btn">
+                   <div class="btn-layer"></div>
+                   <input type="submit" value="Login">
+                </div>
+                <div class="signup-link">
+                   Don't Have Account? <a href="">Create A New</a>
+                </div>
+             </form>
+          </div>
+       </div>
+    </div>
+    <script src="style.js"></script>
+  </body>
+</html>
